@@ -1,6 +1,10 @@
 import random
 import requests
 
+#Extention, welcome to the game and add in player name 
+print("\nHello, are you ready to play pokemon top trumps?")
+player = input("Please enter your name here: ")
+
 def random_pokemon():
     pokemon_number = random.randint(1, 151)
     url = 'https://pokeapi.co/api/v2/pokemon/{}/'.format(pokemon_number)
